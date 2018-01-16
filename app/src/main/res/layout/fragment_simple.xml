@@ -11,24 +11,24 @@
         android:background="@color/my_fragment_color"
         >
 
-    <TextView
-        android:id="@+id/fragment_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        android:padding="4dp"
-        android:text="@string/question_article"
-        />
+        <TextView
+            android:id="@+id/fragment_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radio_group"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="4dp"
+            android:text="@string/question_article"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
     
     <RadioGroup
         android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp">
+        android:layout_marginLeft="179dp"
+        android:layout_marginStart="179dp">
 
         <RadioButton
             android:id="@+id/radio_button_yes"
@@ -48,21 +48,60 @@
             android:text="@string/no"
             />
     </RadioGroup>
+
+        <TextView
+            android:id="@+id/fragment_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/question_article2"
+            android:layout_below="@+id/fragment_header"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <RatingBar
+
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/radio_group"
+            android:layout_marginStart="154dp"
+            android:layout_marginLeft="179dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+            />
+
     </RelativeLayout>
 
   <RelativeLayout
       android:id="@+id/relative_teste"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
       android:layout_below="@+id/relative_tes"
       android:layout_marginTop="96dp"
      >
 
       <ImageView
-          android:layout_width="wrap_content"
+          android:contentDescription="@string/image_products"
+          android:layout_width="120dp"
           android:layout_height="wrap_content"
-          android:src="@mipmap/ic_launcher"
-          />
+          android:layout_marginRight="10dp"
+          android:src="@drawable/ps4"
+          android:layout_marginEnd="10dp" />
+
+      <TextView
+          android:id="@+id/text_article"
+          android:layout_width="230dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_marginEnd="12dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="12dp"
+          android:text="@string/content_text_article"/>
   </RelativeLayout>
 
 </RelativeLayout>

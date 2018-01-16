@@ -7,11 +7,18 @@
     android:layout_height="match_parent"
     tools:context="com.example.quarto.myapplication.MainActivity">
 
-    <fragment
-        android:id="@+id/fragment"
-        android:name="com.example.quarto.myapplication.SimpleFragment"
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_simple"
         />
+
+    <Button
+        android:id="@+id/button_open_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="@string/open"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp" />
 </RelativeLayout>

@@ -5,4 +5,9 @@
     <string name="no">No</string>
     <string name="yes_message">ARTICLE: Like</string>
     <string name="no_message">ARTICLE: Thanks</string>
+    <string name="content_text_article">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="question_article2">LIKE THE SONG?</string>
+    <string name="image_products">Image products</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
 </resources>
